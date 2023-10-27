@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="./styles/index.css">
     <title>EcoOPOVO</title>
 </head>
-<body>
+<body class="bg-mode">
     <header class="header">
-        <a href="#" class="logo"><h1>Eco OPOVO</h1></a>
+        <a href="#" class="logo"><h1>OPOVO Quiz</h1></a>
     </header>
     <div class="container">
         <div class="content">
             <div class="go-quiz">
                 <h2>Preparados pro quiz?</h2>
-                <a href="./pages/quiz.html" class="enter">Entrar</a>
+                <div class="username-container">
+                    <label for="name">Insira seu nome:</label>
+                    <input type="text" name="name" id="name" class="username">
+                </div>
+                <a href="./pages/quiz.html" class="enter" role="button">Entrar</a>
             </div>
         </div>
     </div>
+    <footer class="rodape">
+        <span>Developing by: Matheus <span class="red">Fr</span>an<span class="blue">ça</span> &copy;</span>
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

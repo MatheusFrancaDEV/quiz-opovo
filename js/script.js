@@ -36,7 +36,7 @@ function nextQuestion(e) {
 
 function finish() {
   if(questionsCorrect >= 3){
-    textFinish.innerHTML = `Parabéns você acertou ${questionsCorrect} de ${questions.length}, você está manjando das coisas😂😎🦜`;
+    textFinish.innerHTML = `Parabéns você acertou ${questionsCorrect} de ${questions.length}, merece um brinde😊`;
   }
   else{
     textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;

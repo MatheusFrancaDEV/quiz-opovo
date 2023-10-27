@@ -34,5 +34,5 @@ export default [
         { option: "Petróleo", correct: true },
         { option: "Eolica", correct: false },
       ],
-    },
-  ];
+    }
+];
