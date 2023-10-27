@@ -5,6 +5,7 @@ const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
+const image = document.querySelector(".image");
 
 import questions from "./questions.js";
 
@@ -34,7 +35,12 @@ function nextQuestion(e) {
 }
 
 function finish() {
-  textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
+  if(questionsCorrect >= 3){
+    textFinish.innerHTML = `Parabéns você acertou ${questionsCorrect} de ${questions.length}, merece um brinde😊`;
+  }
+  else{
+    textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
+  }
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
@@ -44,6 +50,7 @@ function loadQuestion() {
   const item = questions[currentIndex];
   answers.innerHTML = "";
   question.innerHTML = item.question;
+  image.innerHTML = item.image;
 
   item.answers.forEach((answer) => {
     const div = document.createElement("div");

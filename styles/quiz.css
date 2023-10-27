@@ -10,29 +10,34 @@ body{
   background: linear-gradient(90deg, rgb(46, 156, 219) 0%, rgb(17, 150, 155) 100%);
 }
 .title{
-    text-align: center;
-    color: var(---text-light);
+  text-align: center;
+  color: var(---text-light);
 }
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 1rem;
-    gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+  gap: 3rem;
 }
 .content{
-    display: flex;
-    flex-direction: column;
-    background-color: var(---bg-light);
-    padding: 1.2rem;
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(---bg-light);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
 }
 .quantidade{
-    font-weight: bold;
+  font-weight: bold;
   text-align: end;
+}
+.image-holder{
+  width: 100%;
 }
 .answers{
   display: flex;
@@ -53,16 +58,16 @@ button{
   font-size: 1.1rem;
 }
 .answer:hover{
-    background-color: var(---btn-active);
+  background-color: var(---btn-active);
 }
 .finish{
-    display: none;
-    flex-direction: column;
-    background-color: var(---bg-light);
-    padding: 1.2rem;
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    gap: 1rem;
+  display: none;
+  flex-direction: column;
+  background-color: var(---bg-light);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  gap: 1rem;
 }
 .finish button{
   text-align: center;
