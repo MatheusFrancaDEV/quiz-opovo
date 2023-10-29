@@ -38,6 +38,7 @@ body{
 }
 .image-holder{
   width: 100%;
+  border-radius: 4px;
 }
 .answers{
   display: flex;
