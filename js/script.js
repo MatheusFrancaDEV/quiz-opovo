@@ -5,7 +5,7 @@ const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
-const image = document.querySelector(".image");
+const image = document.querySelector(".image"); 
 
 import questions from "./questions.js";
 
@@ -36,7 +36,7 @@ function nextQuestion(e) {
 
 function finish() {
   if(questionsCorrect >= 3){
-    textFinish.innerHTML = `Parabéns você acertou ${questionsCorrect} de ${questions.length}, merece um brinde😊`;
+    textFinish.innerHTML = `Parabéns você acertou ${questionsCorrect} de ${questions.length}`;
   }
   else{
     textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
